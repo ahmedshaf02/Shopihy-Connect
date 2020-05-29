@@ -1,0 +1,18 @@
+/* for navigation styling */
+.navLink:hover {
+  opacity: 1;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.iconStyle {
+  font-size: 20;
+}
+.active{
+  opacity: 1;
+  border: 1px solid black;
+  border-radius: 5px;
+}
