@@ -5,7 +5,7 @@
 
 
 ### please do visit here [React-Connect](https://react-connect.ahmedshaf02.now.sh/)
-### similar projecte [React-Shopihy](https://react-shopihy-com.ahmedshaf02.now.sh/)
+### similar project [React-Shopihy](https://react-shopihy-com.ahmedshaf02.now.sh/)
 
 **Medium post about React-Connec [React-Connect](https://medium.com/@ahmedshaf02/)
 
