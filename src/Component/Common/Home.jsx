@@ -19,7 +19,7 @@ margin:10
     };
   }
   render() {
-    const {productData,shoppingArrData,category} = this.props
+    const {productData,shoppingArrData,category,perPage,page} = this.props
     const{select} = this.state
     const value = shoppingArrData.length
     console.log(this.props)
@@ -35,7 +35,9 @@ margin:10
         <div className="container">
           <div class="row justify-content-center">
           <div class={value?"col-12 col-md-6 col-lg-8":"col-12 col-md-12 col-lg-12"} >
-            <div className="row">
+            <div className="row justify-content-center">
+
+        
                 {productData.filter(ele=>{
                   if(select==="All Product"){
                     return true
@@ -44,6 +46,7 @@ margin:10
                     return true
                   }
                 })
+                // .filter((ele,i)=>i>=perPage*(page-1)&&i<perPage*page)
                 .map(ele => (
                     <ProductCard key={ele.id} data={ele} />
                   ))}
@@ -69,9 +72,11 @@ margin:10
 }
 
 const mapStateToProps = state=>({
-  productData:state.productData,
-  shoppingArrData : state.shoppingArrData,
-  category:state.category
+  productData:state.app.productData,
+  shoppingArrData : state.app.shoppingArrData,
+  category:state.app.category,
+  page:state.app.page,
+  perPage:state.app.perPage
 })
 
 

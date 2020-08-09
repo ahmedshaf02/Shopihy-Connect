@@ -96,6 +96,7 @@ render(){
                   </div>
 
               <div class="modal-footer text-center">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
                   <button data-dismiss="modal"  
                   onClick={()=>{
                     if(name === "" && id ===""){

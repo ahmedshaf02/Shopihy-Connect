@@ -103,7 +103,7 @@ class Cart extends React.Component {
       return (
         <div className="text-center">
           <h1 style={{}}> Your Cart list is empty</h1>
-          <img
+          <img className="img-fluid"
             src="https://www.razencustoms.com/includes/img/empty-cart.png"
             alt="cart bag"
           />
@@ -134,7 +134,7 @@ class Cart extends React.Component {
 
 
 const mapStateToProps=state=>({
-  cartArr : state.cartArrData
+  cartArr : state.app.cartArrData
 })
 
 const mapDispatchToProps = dispatch=>({

@@ -89,6 +89,7 @@ class CartModal extends React.Component{
 
         </div>
         <div className="modal-footer text-center">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
             <button onClick={()=>{
 
               if(name==="" && mobile==="" && address==="" && cardNo==="" && cardCode===""){
@@ -108,8 +109,8 @@ class CartModal extends React.Component{
 }
 
 const mapStatePToProps = state=>({
-  orderData: state.orderArrData,
-  cartArrData:state.cartArrData
+  orderData: state.app.orderArrData,
+  cartArrData:state.app.cartArrData
 }) 
 
 const mapDispatchToProps = dispatch=>({

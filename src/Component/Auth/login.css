@@ -1,0 +1,75 @@
+
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login {
+  border-radius: 10;
+  width: 480px;
+  box-shadow: 0px 2px 10px 0px rgba(141, 138, 138, 0.75);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10
+}
+.displayFormat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signupHeading{
+  font-weight: 600;
+  color: rgb(61, 60, 60)
+}
+.signupLogo{
+border-radius: 50%;
+border: 1px solid black;
+padding: 10px
+}
+.loginInput {
+  width: 100%;
+  border: 0.8px solid rgb(211, 206, 206);
+  margin: 24px 0;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.loginButton {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  width: 55%;
+  padding: 20px 0;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+}
+.loginLogo{
+border-radius: 50%;
+border: 1px solid black;
+padding: 10px
+}
+.loginIcon {
+  color: rgba(34, 142, 230, 0.829);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.shopSize:hover {
+  background: black;
+  color: white
+}
+
+.cartButton {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  width: 55%;
+  padding: 20px 0;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+}

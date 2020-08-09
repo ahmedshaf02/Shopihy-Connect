@@ -55,7 +55,7 @@ class Navigation extends React.Component {
         </div>
         <ul className="nav justify-content-center">
           <li>
-            <NavLink className="navLink" to="/" style={Styles.navLink}>
+            <NavLink exact className="navLink" to="/" style={Styles.navLink}>
               Home
             </NavLink>
           </li>
@@ -75,11 +75,11 @@ class Navigation extends React.Component {
               Order
             </NavLink>
           </li>
-          {/* <li>
-            <NavLink className="navLink" to="/login" style={Styles.navLink}>
+          <li>
+            <NavLink className="navLink" to="/auth" style={Styles.navLink}>
               Login
             </NavLink>
-          </li> */}
+          </li>
         </ul>
       </>
     );
@@ -87,9 +87,9 @@ class Navigation extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  productData: state.productData,
-  shoppingArrData: state.shoppingArrData,
-  cartArr: state.cartArrData
+  productData: state.app.productData,
+  shoppingArrData: state.app.shoppingArrData,
+  cartArr: state.app.cartArrData
 });
 
 export default connect(

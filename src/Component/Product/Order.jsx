@@ -26,12 +26,20 @@ const Styles={
   render() {
     const {orderArr} = this.props
     if(orderArr.length===0){
-      return <h1 style={{textAlign:"center",height:"50vh"}}>Your Order list is empty</h1>
+      return (
+
+      <div style={{textAlign:"center"}}>
+
+        <h1 style={{textAlign:"center",height:""}}>Your Order list is empty</h1>
+        <img style={Styles.orderImg} src="https://cdn.dribbble.com/users/363634/screenshots/4200296/emptyscreengraphic.jpg" alt="order"/>
+      </div>
+      )
     }
     return (
       <>
         <div className="container">
           <h1 style={{textAlign:"center"}}>Your Successful Ordered products</h1>
+
         <div className="row" >
           {
             orderArr && orderArr.map(ele=>(
@@ -61,7 +69,7 @@ const Styles={
 
 
 const mapStateToProps=state=>({
-  orderArr : state.orderArrData
+  orderArr : state.app.orderArrData
 })
 
 export default connect(mapStateToProps,null)(Order)

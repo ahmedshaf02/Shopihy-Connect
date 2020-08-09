@@ -12,7 +12,7 @@ class ProductCard extends React.Component {
     const { data, addToShoppingCart } = this.props;
     return (
       <>
-        <div
+        <div 
           className="card"
           style={{ width: "14rem", borderRadius: 6, margin: 8 }}
         >

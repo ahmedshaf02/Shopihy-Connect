@@ -1,6 +1,7 @@
 
-import {createStore,applyMiddleware,compose} from "redux"
+import {createStore,applyMiddleware,compose,combineReducers} from "redux"
 import reducer from "./reducer"
+import authReducer from "../Component/Auth/AuthRedux/authReducer"
 
 // export const store = createStore(reducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
@@ -15,6 +16,8 @@ window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
 
 const enhancers = composeEnhancers(applyMiddleware(thunk))
 
+const mainReducer = combineReducers({app:reducer,auth:authReducer})
 
+export const store = createStore(mainReducer,enhancers)
 
-export const store = createStore(reducer,enhancers)
+console.log(store.getState())
