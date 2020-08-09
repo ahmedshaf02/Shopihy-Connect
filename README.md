@@ -4,9 +4,9 @@
 
 
 
-### please do visit here [Reservation-System](https://.vercel.app)
+### please do visit here [React-Connect](https://react-connect.ahmedshaf02.now.sh/)
 
-**Medium post about Instacalm** [React-Connect](https://medium.com/@ahmedshaf02/)
+**Medium post about Instacalm  [React-Connect](https://medium.com/@ahmedshaf02/)
 
 
  # Demo
