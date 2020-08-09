@@ -134,7 +134,7 @@ const message = loginData.message
                 <span
                   className=""
                   style={{ cursor: "pointer" }}
-                  onClick={()=>handleAuth(!authPage)}
+                  onClick={()=>this.props.handleAuth(!this.props.authPage)}
                 >
                   <b>Log In</b>
                 </span>
