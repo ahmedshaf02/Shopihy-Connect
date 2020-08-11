@@ -20,7 +20,7 @@ class ProductCard extends React.Component {
           <div className="card-body bg-light">
             <h6 className="card-text">{data.name}</h6>
             <h6 className="card-text text-secondary">By {data.company}</h6>
-            <h6 className="card-text">price: {data.cost}</h6>
+            <h6 className="card-text">price: ${data.cost}</h6>
             <button
               onClick={()=>{
                 addToShoppingCart(data,()=>{alert("product has been added successfully")},()=>{alert("product has been added successfully")})
