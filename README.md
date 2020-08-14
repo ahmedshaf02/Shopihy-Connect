@@ -1,5 +1,5 @@
 
-# React-Connect
+# Shopihy-Connect
 ## a shopping site primarily deals with household
 
 
