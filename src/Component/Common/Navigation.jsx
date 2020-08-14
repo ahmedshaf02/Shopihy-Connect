@@ -44,7 +44,7 @@ class Navigation extends React.Component {
     return (
       <>
         <div>
-          <span style={Styles.logoName}> React-Connect</span>
+          <span style={Styles.logoName}> Shopihy-Connect</span>
 
           <img
             width="100"
